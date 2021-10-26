@@ -11,7 +11,7 @@
     "url": "git+https://github.com/Jortdus/functional-programming.git"
   },
   "author": "Jort Broekhof",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Jortdus/functional-programming/issues"
   },
