@@ -1,0 +1,19 @@
+{
+  "name": "functional-programming",
+  "version": "1.0.0",
+  "description": "Functional programming ",
+  "main": "script.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jortdus/functional-programming.git"
+  },
+  "author": "Jort Broekhof",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jortdus/functional-programming/issues"
+  },
+  "homepage": "https://github.com/Jortdus/functional-programming#readme"
+}
