@@ -1,11 +1,26 @@
-var cleaning =[]
-const rawdata = fetch('./datasets/form-data.json')
+var cleaning = [];
+
+const JSONfetch  = fetch('./datasets/form-data.json')
+
+JSONfetch
     .then(results => results.json())
-    .then(data => data.forEach(function(v, i, data) {
-        cleaning.push(data[i]["Kaas is ook een zoogdier?"].toString().toLowerCase())
+    .then(data => data.forEach(function (value, index, obj) {
+        cleaning.push(data[index]["Kaas is ook een zoogdier?"].toString().toLowerCase())
         cleaning.sort().reverse()
+
+        Object.keys(value).forEach(key => {
+            switch (key) {
+                case "Wat is je favoriete soort huisdier?":
+                    keyCleanup("huisdier", key, obj)
+                    console.log(obj) 
+                    break;
+            }
+        });
+
     }));
 
-console.log(cleaning)
-
-
+function keyCleanup(newKey, oldKey, o) {
+    delete Object.assign(o, {
+        [newKey]: o[oldKey]
+    })[oldKey];
+}
