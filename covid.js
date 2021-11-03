@@ -1,23 +1,26 @@
 let cityValue = []
 
 //Datafetch from RIVM
-// const dataFetch = fetch('https://data.rivm.nl/covid-19/COVID-19_rioolwaterdata.json ')
+// const covidFetch = fetch('https://data.rivm.nl/covid-19/COVID-19_rioolwaterdata.json ')
 //     .then(results => results.json())
 
 
-const dataFetch = fetch('./datasets/covid.json')
+const covidFetch = fetch('./datasets/covid.json')
     .then(results => results.json())
 
-function parseData() {
+    const provinceFetch = fetch('./datasets/province.json')
+    .then(results => results.json())
+
+function parseCovid() {
     return new Promise((resolve, reject) => {
-        let data = dataFetch
+        let data = covidFetch
         resolve(data)
     }).then(data => {
         data.forEach(e => {
             cityValue.push({
                 particles: e['RNA_flow_per_100000'],
-                date: e['Date_measurement'],
-                location: e['RWZI_AWZI_name']
+                location: e['RWZI_AWZI_name'],
+                date: e['Date_measurement']
             })
         })
 
@@ -26,6 +29,29 @@ function parseData() {
     })
 }
 
-parseData().then(data => {
+function parseProvince() {
+    return new Promise((resolve, reject) => {
+        let data = provinceFetch
+        resolve(data)
+    }).then(data => {
+        return data.map(obj => {
+            Object.keys(obj).forEach(key => {
+                obj[key] = normalizeAnswers(obj[key])
+            })
+            return obj;
+        })
+        
+    })
+}
+
+function normalizeAnswers(data) {
+	return data.toString().toLowerCase()
+}
+
+parseCovid().then(data => {
     console.log(cityValue)
+})
+
+parseProvince().then(data => {
+    console.log(data)
 })

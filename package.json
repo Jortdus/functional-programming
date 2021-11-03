@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Jortdus/functional-programming/issues"
   },
-  "homepage": "https://github.com/Jortdus/functional-programming#readme"
+  "homepage": "https://github.com/Jortdus/functional-programming#readme",
+  "dependencies": {
+    "node-geocoder": "^3.27.0"
+  }
 }

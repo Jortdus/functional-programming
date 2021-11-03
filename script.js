@@ -126,4 +126,4 @@ function graphCreation() {
 	svg.append("g")
 		.call(d3.axisLeft(y));
 
-};
+}
