@@ -4,9 +4,9 @@
 [![forthebadge](https://forthebadge.com/images/badges/check-it-out.svg)](https://forthebadge.com)
 
 
-![GitHub last commit](https://img.shields.io/github/last-commit/jortdus/blok-tech)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/m/jortdus/blok-tech)
-[![GitHub license](https://img.shields.io/github/license/pmvdbijl7/matching-app)](https://github.com/jortdus/blok-tech/blob/main/LICENSE)
+![GitHub last commit](https://img.shields.io/github/last-commit/jortdus/functional-programming)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/jortdus/functional-programming)
+[![GitHub license](https://img.shields.io/github/license/pmvdbijl7/matching-app)](https://github.com/jortdus/functional-programming/LICENSE)
 
 Track Tech, front-end programming with a focus on visualization. 
 
