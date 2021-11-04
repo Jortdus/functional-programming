@@ -8,7 +8,7 @@ let cityValue = []
 const covidFetch = fetch('./datasets/covid.json')
     .then(results => results.json())
 
-    const provinceFetch = fetch('./datasets/province.json')
+const provinceFetch = fetch('./datasets/province.json')
     .then(results => results.json())
 
 function parseCovid() {
