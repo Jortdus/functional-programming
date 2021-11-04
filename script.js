@@ -19,13 +19,8 @@ function parseData() {
 				})
 				return obj;
 			})
-		})
-		.then(data => {
-			return data.map(obj => {
-				return obj;
-			})
-			// keyCleanup() changes a key value in a object to a specified string. 
 		}).then(json => json.map((v, i, arr) => {
+			// keyCleanup() changes a key value in a object to a specified string. 
 			keyCleanup("Wat is je oogkleur?", "oogkleur", v)
 			keyCleanup("Wat is je favoriete soort huisdier?", "huisdier", v)
 			keyCleanup("Wat is je favoriete windrichting?", "wind", v)
