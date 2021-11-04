@@ -187,3 +187,15 @@ Dit ga ik doen met behulp van een dataset van het CBS, hierin staan de naamplaat
 
 Als ik de twee datasets met elkaar kan vergelijk en met een functie de toebehorende provincie kan koppelen aan de naamplaats, kan ik dit visualiseren in een D3.js kaart met de gemiddelde aantal deeltjes. 
 
+# Dag 9 4 november 
+
+## **Work done**
+* Finished README.md
+* Finished creating wiki.md
+* Added code comments to script.js 
+* Made sure everything is correct for assignment turn-in 
+
+## **Recap**
+
+Vandaag ben ik bezig geweest met de puntjes op de i zetten voor het inlever moment. 
+Omdat de wiki niet makkelijk te exporteren is heb ik de markdown in een apart wiki.md bestand gestopt en op mijn repo gezet. 
